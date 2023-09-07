@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+
+<head>
+
+	<!-- META ============================================= -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	
+	<!-- DESCRIPTION -->
+	<meta name="description" content="SSMS" />
+	
+	<!-- OG -->
+	<meta property="og:title" content="SSMS" />
+	<meta property="og:description" content="SSMS" />
+	<meta property="og:image" content="" />
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- FAVICONS ICON ============================================= -->
+	<link rel="icon" src="{% static 'assets/images/favicon.ico' %}" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}" />
+	
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title>EduChamp : Education HTML Template </title>
+	
+	<!-- MOBILE SPECIFIC ============================================= -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--[if lt IE 9]>
+	<script src="{% static 'assets/js/html5shiv.min.js' %}"></script>
+	<script src="{% static 'assets/js/respond.min.js' %}"></script>
+	<![endif]-->
+	
+	<!-- All PLUGINS CSS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/assets.css' %}">
+	
+	<!-- TYPOGRAPHY ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/typography.css' %}">
+	
+	<!-- SHORTCODES ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes/shortcodes.css' %}">
+	
+	<!-- STYLESHEETS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+	<link class="skin" rel="stylesheet" type="text/css" href="{% static 'assets/css/color/color-1.css' %}">
+	
+</head>
+<body id="bg">
+    {% load static %}
+	<div class="page-wraper">
+		<div id="loading-icon-bx"></div>
+		<div class="account-form">
+			<div class="account-head" style="background-image:url({% static 'assets/images/background/bg2.jpg' %});">
+				<a href="index.html"><img src="{% static 'assets/images/logo-white-2.png' %}" alt=""></a>
+			</div>
+			<div class="account-form-inner">
+				<div class="account-container">
+					<div class="heading-bx left">
+						<h2 class="title-head">Login to your <span>Account</span></h2>
+                        {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                        <strong>Message:</strong> {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    {% endfor %}
+						<p>Don't have an account? <a href="/signup">Create one here</a></p>
+					</div>
+
+                    
+                    <form method="post" action="/signin" class="contact-bx">
+                        {% csrf_token %}
+						<div  class="text-danger"></div>
+						<div class="row placeani">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<div class="input-group">
+										<label for="username">Username</label>
+                                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter Your Username" Required>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="form-group">
+									<div class="input-group">
+										<label for="pass1">Password</label>
+            <input type="password" class="form-control" id="pass1" name="pass1" placeholder="Enter Your Password" Required>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="form-group form-forget">
+									<div class="custom-control custom-checkbox">
+										<div class="checkbox">
+											<label >
+												<input id="chkRememberMe"  type='checkbox' />
+												Remember Me
+											</label>
+										</div>
+										<a id="forgot-password" href="/forgotpassword">Forgot your password?</a>
+									</div>
+								</div>
+								<div class="col-lg-12 m-b30">
+									<button name="submit" type="submit" value="Submit" class="btn button-md">Login</button>
+								</div>
+								<div class="col-lg-12">
+									<h6>Login with Social media</h6>
+									<div class="d-flex">
+										<a class="btn flex-fill m-r5 facebook" href="#"><i class="fa fa-facebook"></i>Facebook</a>
+										<a class="btn flex-fill m-l5 google-plus" href="#"><i class="fa fa-google-plus"></i>Google Plus</a>
+									</div>
+								</div>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- External JavaScripts -->
+	<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+	<script src="{% static 'assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+	<script src="{% static 'assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+	<script src="{% static 'assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+	<script src="{% static 'assets/vendors/magnific-popup/magnific-popup.js' %}"></script>
+	<script src="{% static 'assets/vendors/counter/waypoints-min.js' %}"></script>
+	<script src="{% static 'assets/vendors/counter/counterup.min.js' %}"></script>
+	<script src="{% static 'assets/vendors/imagesloaded/imagesloaded.js' %}"></script>
+	<script src="{% static 'assets/vendors/masonry/masonry.js' %}"></script>
+	<script src="{% static 'assets/vendors/masonry/filter.js' %}"></script>
+	<script src="{% static 'assets/vendors/owl-carousel/owl.carousel.js' %}"></script>
+	<script src="{% static 'assets/js/functions.js' %}"></script>
+	<script src="{% static 'assets/js/contact.js' %}"></script>
+	<script src="{% static 'assets/vendors/switcher/switcher.js' %}"></script>
+</body>
+
+</html>

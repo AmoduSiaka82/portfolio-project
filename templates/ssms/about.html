@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+	<!-- META ============================================= -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="robots" content="" />
+	
+	<!-- DESCRIPTION -->
+	<meta name="description" content="About : SSMS" />
+	
+	<!-- OG -->
+	<meta property="og:title" content="About : SSMS" />
+	<meta property="og:description" content="About : SSMS" />
+	<meta property="og:image" content="" />
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- FAVICONS ICON ============================================= -->
+	<link rel="icon" href="{% static 'assets/images/favicon.ico' %}" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}" />
+	
+	<!-- PAGE TITLE HERE ============================================= -->
+	<title>About : SSMS </title>
+	
+	<!-- MOBILE SPECIFIC ============================================= -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--[if lt IE 9]>
+	<script src="{% static 'assets/js/html5shiv.min.js' %}"></script>
+	<script src="{% static 'assets/js/respond.min.js' %}"></script>
+	<![endif]-->
+	
+	<!-- All PLUGINS CSS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/assets.css' %}">
+	
+	<!-- TYPOGRAPHY ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/typography.css' %}">
+	
+	<!-- SHORTCODES ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/shortcodes/shortcodes.css' %}">
+	
+	<!-- STYLESHEETS ============================================= -->
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+	<link class="skin" rel="stylesheet" type="text/css" href="{% static 'assets/css/color/color-1.css' %}">
+	
+</head>
+<body id="bg">
+<div class="page-wraper">
+	<div id="loading-icon-bx"></div>
+	<!-- Header Top ==== -->
+    <header class="header rs-nav">
+		<div class="top-bar">
+			<div class="container">
+				<div class="row d-flex justify-content-between">
+					<div class="topbar-left">
+						<ul>
+							<li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+							<li><a href="javascript:;"><i class="fa fa-envelope-o"></i>info@ssms.com</a></li>
+						</ul>
+					</div>
+					<div class="topbar-right">
+						<ul>
+							<li>
+								<select class="header-lang-bx">
+									<option data-icon="flag flag-uk">English UK</option>
+									<option data-icon="flag flag-us">English US</option>
+								</select>
+							</li>
+							<li><a href="/signin">Sign In</a></li>
+							<li><a href="/signup">Sign Up</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sticky-header navbar-expand-lg">
+            <div class="menu-bar clearfix">
+                <div class="container clearfix">
+					<!-- Header Logo ==== -->
+					<div class="menu-logo">
+						<a href="index.html"><img src="{% static 'assets/images/logo.png' %}" alt=""></a>
+					</div>
+					<!-- Mobile Nav Button ==== -->
+                    <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<!-- Author Nav ==== -->
+                    <div class="secondary-menu">
+                        <div class="secondary-inner">
+                            <ul>
+								<li><a href="https://www.linkedin.com/in/siaka-amodu-00727b257?trk=contact-info"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/jamiu-o-shuaib-3b63a6115?trk=contact-info"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/lazarus-esla-aa282b271/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li> <a href="https://twitter.com/siakaamodu1"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://twitter.com/ShuaiBJO88"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://twitter.com/lazarus_esla"><i class="fa fa-twitter"></i></a></li>
+                                    <li> <a href="https://github.com/Amodusiaka82"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://github.com/justme80sj"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://github.com/lazesla"><i class="fa fa-github"></i></a></li>
+								<!-- Search Button ==== -->
+								<li class="search-btn"><button id="quik-search-btn" type="button" class="btn-link"><i class="fa fa-search"></i></button></li>
+							</ul>
+						</div>
+                    </div>
+					<!-- Search Box ==== -->
+                    <div class="nav-search-bar">
+                        <form action="#">
+                            <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
+                            <span><i class="ti-search"></i></span>
+                        </form>
+						<span id="search-remove"><i class="ti-close"></i></span>
+                    </div>
+					<!-- Navigation Menu ==== -->
+                    <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+						<div class="menu-logo">
+							<a href="index.html"><img src="{% static 'assets/images/logo.png' %}" alt=""></a>
+						</div>
+                        <ul class="nav navbar-nav">	
+                          
+
+                                <li><a href="/index">Home</a></li>
+                                <li>
+    
+                                <li><a href="/about">About</a></li>
+    
+                                <li><a href="#">Contact Us</a></li>
+    
+                                <li><a href="#">Blog </a></li>
+    
+                                {% if user.is_authenticated %}
+                                <li class="nav-dashboard">
+                                    <a href="javascript:;">Dashboard <i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Dashboard</a></li>
+                                        <li><a href="#">Subject</a></li>
+                                        <li><a href="#">Review</a></li>
+                                        <li><a href="#">Teacher Profile</a></li>
+                                        <li><a href="#">User Profile</a></li>
+    
+                                    </ul>
+                                </li>
+    {% endif %}
+                            
+						</ul>
+						<div class="nav-social-link">
+							<li><a href="https://www.linkedin.com/in/siaka-amodu-00727b257?trk=contact-info"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/jamiu-o-shuaib-3b63a6115?trk=contact-info"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/lazarus-esla-aa282b271/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li> <a href="https://twitter.com/siakaamodu1"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://twitter.com/ShuaiBJO88"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://twitter.com/lazarus_esla"><i class="fa fa-twitter"></i></a></li>
+                                    <li> <a href="https://github.com/Amodusiaka82"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://github.com/justme80sj"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://github.com/lazesla"><i class="fa fa-github"></i></a></li>
+						</div>
+                    </div>
+					<!-- Navigation Menu END ==== -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header END ==== -->
+    <!-- Inner Content Box ==== -->
+    <div class="page-content">
+        <!-- Page Heading Box ==== -->
+        <div class="page-banner ovbl-dark" style="background-image:url({% static 'assets/images/banner/banner2.jpg' %});">
+            <div class="container">
+                <div class="page-banner-entry">
+                    <h1 class="text-white">About Us</h1>
+				 </div>
+            </div>
+        </div>
+		<div class="breadcrumb-row">
+			<div class="container">
+				<ul class="list-inline">
+					<li><a href="#">Home</a></li>
+					<li>About Us</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Page Heading Box END ==== -->
+		<!-- Page Content Box ==== -->
+		<div class="content-block">
+            <!-- About Us ==== -->
+			<div class="section-area section-sp1">
+                <div class="container">
+					 <div class="row">
+						<div class="col-lg-4 col-md-8 col-sm-8 m-b30">
+							<div class="feature-container">
+								<div class="feature-md text-white m-b20">
+									<a href="#" class="icon-cell"><img src="{% static 'assets/images/icon/icon1.png' %}" alt=""/></a> 
+								</div>
+								<div class="icon-content">
+									<h5 class="ttr-tilte">Our Philosophy</h5>
+									<p>"Education is the most powerful weapon which you can use to change the word" - Nelson Mandela</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-8 col-sm-8 m-b30">
+							<div class="feature-container">
+								<div class="feature-md text-white m-b20">
+									<a href="#" class="icon-cell"><img src="{% static 'assets/images/icon/icon2.png' %}" alt=""/></a> 
+								</div>
+								<div class="icon-content">
+									<h5 class="ttr-tilte">Our Principle</h5>
+									<p>We focused on the training and skill development of individuals in various communities</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-8 col-sm-8 m-b30">
+							<div class="feature-container">
+								<div class="feature-md text-white m-b20">
+									<a href="#" class="icon-cell"><img src="{% static 'assets/images/icon/icon3.png' %}" alt=""/></a> 
+								</div>
+								<div class="icon-content">
+									<h5 class="ttr-tilte">Key Of Success</h5>
+									<p>The future belongs to those who believe in the beauty of their dreams. This is the reason why we exist. we bring out the hidden dreams in AFrica Children into fore of development</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+            </div>
+			<!-- About Us END ==== -->
+            <!-- Our Story ==== -->
+			<div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 bg-gray">
+                            <h2 class="m-b10">Our Story</h2>
+                            <h5 class="fw4">It is a long established fact that a reade.</h5>
+                            <p>
+                                We were inspired to embark on this Smart School Management System (SSMS) due to numbers of reasons ranges from parent's inconveniences, loss of students' information, disintegrating key stakeholders from the system of education and essentially, over dependency on traditional hardcopy result collection in the midst of 21st century.
+
+                                For instance, I was asked to represent my Uncle, whose child attends one of the best city college in Lagos Island, Lagos State, Nigeria. The purpose of the representation was to obtain his child's college report sheet. With the poor road network and heavy traffic in Lagos Island for about four (4) hours, I got to the School late and missed the Desk Officer in charge of result collection. She had closed for the day due to my ten (10) minutes lateness behind the official closing time. The best option given by one of the school Administrators was to come back in following day. I began to ask myself, I would be coming back to face the same traffic I had no control over and also, facing the same traditional system of result collection.
+
+                                After sitting beside numbers of parents and guidance for few minutes at the school reception to regain my loss strength and energy. I had a thought of bringing an end to parents' unnecessary stress and proffer a lasting solution to students result collection at the comfort of parents' home with the aid of application's development. While still on the transit to return home, empty handed, I began to think beyond result collection and considered development of a complete School Management solution needed in the 21st century that brings all the stakeholders (parents, students, school administrators, teachers and government) together for effective service delivery. This boosted my morale and aided the flow of blood in my veins to see the end of an application that is capable of solving multiple college problems.
+                            </p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+			<!-- Our Story END ==== -->
+			
+			<!-- Testimonials ==== -->
+			<div class="section-area section-sp2">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 heading-bx left">
+							<h2 class="title-head text-uppercase">what people <span>say</span></h2>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page</p>
+						</div>
+					</div>
+					<div class="testimonial-carousel owl-carousel owl-btn-1 col-12 p-lr0">
+						<div class="item">
+							<div class="testimonial-bx">
+								<div class="testimonial-thumb">
+									<img src="{% static 'assets/images/testimonials/pic1.jpg' %}" alt="">
+								</div>
+								<div class="testimonial-info">
+									<h5 class="name">Mr Shuaib Jamiu</h5>
+									<p>-Admin</p>
+								</div>
+								<div class="testimonial-content">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimonial-bx">
+								<div class="testimonial-thumb">
+									<img src="{% static 'assets/images/testimonials/pic2.jpg' %}" alt="">
+								</div>
+								<div class="testimonial-info">
+									<h5 class="name">Mr Siaka Amodu</h5>
+									<p>-Pragrame Analyst</p>
+								</div>
+								<div class="testimonial-content">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+								</div>
+							</div>
+						</div>
+                        <div class="item">
+							<div class="testimonial-bx">
+								<div class="testimonial-thumb">
+									<img src="{% static 'assets/images/testimonials/pic3.jpg' %}" alt="">
+								</div>
+								<div class="testimonial-info">
+									<h5 class="name">Mr Lazarus Esla</h5>
+									<p>-Pragrame Analyst</p>
+								</div>
+								<div class="testimonial-content">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Testimonials END ==== -->
+		</div>
+		<!-- Page Content Box END ==== -->
+    </div>
+    <!-- Inner Content Box END ==== -->
+    <!-- Footer ==== -->
+    <footer>
+        <div class="footer-top">
+			<div class="pt-exebar">
+				<div class="container">
+					<div class="d-flex align-items-stretch">
+						<div class="pt-logo mr-auto">
+							<a href="index.html"><img src="{% static 'assets/images/logo-white.png' %}" alt=""/></a>
+						</div>
+						<div class="pt-social-link">
+							<ul class="list-inline m-a0">
+								<li><a href="https://www.linkedin.com/in/siaka-amodu-00727b257?trk=contact-info"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/jamiu-o-shuaib-3b63a6115?trk=contact-info"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/lazarus-esla-aa282b271/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li> <a href="https://twitter.com/siakaamodu1"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://twitter.com/ShuaiBJO88"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://twitter.com/lazarus_esla"><i class="fa fa-twitter"></i></a></li>
+                                    <li> <a href="https://github.com/Amodusiaka82"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://github.com/justme80sj"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://github.com/lazesla"><i class="fa fa-github"></i></a></li>
+							</ul>
+						</div>
+						<div class="pt-btn-join">
+							<a href="#" class="btn ">Join Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="container">
+                <div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
+                        <div class="widget">
+                            <h5 class="footer-title">Sign Up For A Newsletter</h5>
+							<p class="text-capitalize m-b20">Weekly Breaking news analysis and cutting edge advices on job searching.</p>
+                            <div class="subscribe-form m-b20">
+								<form class="subscription-form" action="#" method="post">
+									<div class="ajax-message"></div>
+									<div class="input-group">
+										
+									</div>
+								</form>
+							</div>
+                        </div>
+                    </div>
+					<div class="col-12 col-lg-5 col-md-7 col-sm-12">
+						<div class="row">
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">Company</h5>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="/about">About</a></li>
+										<li><a href="faq-1.html">FAQs</a></li>
+										<li><a href="contact-1.html">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">Get In Touch</h5>
+									<ul>
+										<li><a href="#">Dashboard</a></li>
+										<li><a href="blog-classic-grid.html">Blog</a></li>
+										<li><a href="portfolio.html">Portfolio</a></li>
+										<li><a href="event.html">Event</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+								<div class="widget footer_widget">
+									<h5 class="footer-title">Courses</h5>
+									<ul>
+										<li><a href="courses.html">Courses</a></li>
+										<li><a href="courses-details.html">Details</a></li>
+										<li><a href="membership.html">Membership</a></li>
+										<li><a href="profile.html">Profile</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+                        <div class="widget widget_gallery gallery-grid-4">
+                            <h5 class="footer-title">Our Gallery</h5>
+                            <ul class="magnific-image">
+								<li><a href="{% static 'assets/images/gallery/pic1.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic1.jpg' %}" alt=""></a></li>
+								<li><a href="{% static 'assets/images/gallery/pic2.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic2.jpg' %}" alt=""></a></li>
+								<li><a href="{% static 'assets/images/gallery/pic3.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic3.jpg' %}" alt=""></a></li>
+								<li><a href="{% static 'assets/images/gallery/pic4.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic4.jpg' %}" alt=""></a></li>
+								<li><a href="{% static 'assets/images/gallery/pic5.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic5.jpg' %}" alt=""></a></li>
+								<li><a href="{% static 'assets/images/gallery/pic6.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic6.jpg' %}" alt=""></a></li>
+								<li><a href="{% static 'assets/images/gallery/pic7.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic7.jpg' %}" alt=""></a></li>
+								<li><a href="{% static 'assets/images/gallery/pic8.jpg" class="magnific-anchor"><img src="assets/images/gallery/pic8.jpg' %}" alt=""></a></li>
+							</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center"><a target="_blank" href="#">Powered by Mr Siaka Amodu,Mr Shuaib Jamiu, Lazarus Esla</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer END ==== -->
+    <button class="back-to-top fa fa-chevron-up"></button>
+</div>
+<!-- External JavaScripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+<script src="{% static 'assets/vendors/magnific-popup/magnific-popup.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/waypoints-min.js' %}"></script>
+<script src="{% static 'assets/vendors/counter/counterup.min.js' %}"></script>
+<script src="{% static 'assets/vendors/imagesloaded/imagesloaded.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/masonry.js' %}"></script>
+<script src="{% static 'assets/vendors/masonry/filter.js' %}"></script>
+<script src="{% static 'assets/vendors/owl-carousel/owl.carousel.js' %}"></script>
+<script src="{% static 'assets/js/functions.js' %}"></script>
+<script src="{% static 'assets/js/contact.js' %}"></script>
+<script src="{% static 'assets/vendors/switcher/switcher.js' %}"></script>
+</body>
+
+
+</html>
