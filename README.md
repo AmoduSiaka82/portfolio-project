@@ -21,6 +21,7 @@ We were inspired to embark on this Smart School Management System (SSMS) due to 
 
                                 After sitting beside numbers of parents and guidance for few minutes at the school reception to regain my loss strength and energy. I had a thought of bringing an end to parents' unnecessary stress and proffer a lasting solution to students result collection at the comfort of parents' home with the aid of application's development. While still on the transit to return home, empty handed, I began to think beyond result collection and considered development of a complete School Management solution needed in the 21st century that brings all the stakeholders (parents, students, school administrators, teachers and government) together for effective service delivery. This boosted my morale and aided the flow of blood in my veins to see the end of an application that is capable of solving multiple college problems.
 The following challenges came up when we started:
+
                                 •It was quite challenging setting up an environment on Visual Studio Code where we can actually start the entire project. Series of research were done on google without significant solutions. To widen up our scope of knowledge, we watched several video clips on youtube. Following all the steps and processes highlighted on google and youtube, we end up achieving little success. We finally got a breakthrough with the step-by-step guidelines shown on ChatGPT.
 
 
