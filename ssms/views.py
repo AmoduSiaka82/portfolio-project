@@ -13,13 +13,13 @@ from django.utils.encoding import force_bytes
 from django.contrib.auth import authenticate, login, logout
 from . tokens import generate_token
 # Create your views here.
-
-
-# Create your views here.
+# landing page function(home)
 def home(request):
     return render(request, "ssms/index.html")
 def about(request):
     return render(request, "ssms/about.html")
+
+# signup function
 def signup(request):
     if request.method == "POST":
         username = request.POST['username']
@@ -65,7 +65,7 @@ def signup(request):
         
     return render(request, "ssms/signup.html")
 
-
+# activate function
 def activate(request,uidb64,token):
     try:
         uid = str(urlsafe_base64_decode(uidb64))
@@ -83,7 +83,7 @@ def activate(request,uidb64,token):
     else:
         return render(request,'activation_failed.html')
 
-
+# signin fuction
 def signin(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -102,7 +102,7 @@ def signin(request):
     
     return render(request, "ssms/signin.html")
 
-
+# signout function
 def signout(request):
     logout(request)
     messages.success(request, "Logged Out Successfully!!")
